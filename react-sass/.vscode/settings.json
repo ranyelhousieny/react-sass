@@ -1,0 +1,6 @@
+{
+    "editor.formatOnType": true,
+    "html.format.wrapLineLength": 20,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 20
+}

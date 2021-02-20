@@ -1,50 +1,87 @@
-.App {
-  text-align: center;
-}
+.btn {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  &__burger {
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 6px;
+      background: black;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin
-      infinite 20s linear;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      transform: translateY(
+        -12px
+      );
+    }
+    &::after {
+      transform: translateY(
+        12px
+      );
+    }
   }
 }
 
-$headerBackgroundColor: rgb(
-  93.3%,
-  78.5%,
-  6.9%
-);
-
-.App-header {
-  background-color: $headerBackgroundColor;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/*
+.btn {
+  top: 5rem;
+  right: 3rem;
+  position: fixed;
   align-items: center;
   justify-content: center;
-  font-size: calc(
-    10px + 2vmin
-  );
-  color: white;
-  &:hover {
-    background-color: blue;
-  }
-}
 
-.App-link {
-  color: #61dafb;
-}
+  &__burger {
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 6px;
+      background: black;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      transform: translateY(
+        -12px
+      );
+    }
+    &::after {
+      transform: translateY(
+        12px
+      );
+    }
   }
-  to {
-    transform: rotate(360deg);
+  &__button {
+    background-color: white;
+
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+  }
+  &__checkbox {
+    display: none;
+  }
+
+  &__icon {
+    position: relative;
+    width: 3rem;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
   }
 }
+*/
